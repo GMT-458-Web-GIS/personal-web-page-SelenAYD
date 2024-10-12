@@ -113,6 +113,7 @@ section{
     font-weight: 500;
     margin-top: 1.5rem;
     line-height: 1rem;
+    color: var(--text-color);
 
 }
 
@@ -120,6 +121,7 @@ section{
     margin-bottom: 2rem;
     margin-top: 1rem;
     font-size:  2rem;
+    color: var(--text-color);
 
 }
 
@@ -161,3 +163,169 @@ section{
     transition: 300ms ease-in-out;
 }
 /* HOME END */
+
+
+/* EDUCATION START */
+
+
+ .heading {
+    font-size: 5rem;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.education {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 50px 15px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+.timeline-items {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.timeline-items::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: var(--main-color);
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+
+.timeline-item {
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+    padding-right: 100px;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    text-align: left;
+    padding-left: 100px;
+}
+
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+    top: 20px;
+}
+
+.timeline-item:nth-child(odd)::before {
+    right: -10px;
+}
+
+.timeline-item:nth-child(even)::before {
+    left: -10px;
+}
+
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: var(--bg-color);
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: var(--second-bg-color);
+}
+
+
+@media (max-width: 768px) {
+    .timeline-item {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        text-align: left;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .timeline-items::before {
+        left: 20px;
+    }
+
+    .timeline-item::before {
+        left: -30px;
+    }
+}
+
+/* EDUCATION END */
+
+/* Hobbies START */
+.hobbies-content {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .navbar {
+        margin-top: 10px;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+    }
+
+    .hobbies-content {
+        margin: 20px;
+        padding: 10px;
+    }
+}
+/* HOBBİES END  */
